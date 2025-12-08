@@ -1,0 +1,333 @@
+{
+  "symptoms": [
+    {
+      "code": "G01",
+      "name": "Daun bagian bawah berwarna kuning (klorosis)",
+      "category": "Daun"
+    },
+    {
+      "code": "G02",
+      "name": "Daun tua mengering dan gugur",
+      "category": "Daun"
+    },
+    {
+      "code": "G03",
+      "name": "Pertumbuhan tanaman lambat dan kerdil",
+      "category": "Batang"
+    },
+    {
+      "code": "G04",
+      "name": "Tulang daun muda tampak pucat",
+      "category": "Daun"
+    },
+    {
+      "code": "G05",
+      "name": "Buah tumbuh kecil dan cepat masak",
+      "category": "Buah"
+    },
+    {
+      "code": "G06",
+      "name": "Tanaman tampak lemah dan kurus",
+      "category": "Batang"
+    },
+    {
+      "code": "G07",
+      "name": "Produksi bunga rendah",
+      "category": "Bunga"
+    },
+    {
+      "code": "G08",
+      "name": "Daun bagian bawah berwarna merah keunguan",
+      "category": "Daun"
+    },
+    {
+      "code": "G09",
+      "name": "Tepi daun berwarna coklat seperti hangus",
+      "category": "Daun"
+    },
+    {
+      "code": "G10",
+      "name": "Daun terpelintir",
+      "category": "Daun"
+    },
+    {
+      "code": "G11",
+      "name": "Batang dan cabang berwarna ungu",
+      "category": "Batang"
+    },
+    {
+      "code": "G12",
+      "name": "Sistem perakaran terhambat",
+      "category": "Akar"
+    },
+    {
+      "code": "G13",
+      "name": "Daun tua mengerut tidak merata",
+      "category": "Daun"
+    },
+    {
+      "code": "G14",
+      "name": "Tepi dan ujung daun menguning lalu bercak coklat",
+      "category": "Daun"
+    },
+    {
+      "code": "G15",
+      "name": "Daun seperti terbakar dan gugur",
+      "category": "Daun"
+    },
+    {
+      "code": "G16",
+      "name": "Buah tidak sempurna dan tidak tahan simpan",
+      "category": "Buah"
+    },
+    {
+      "code": "G17",
+      "name": "Bunga mudah rontok",
+      "category": "Bunga"
+    },
+    {
+      "code": "G18",
+      "name": "Titik tumbuh pada pucuk mati",
+      "category": "Batang"
+    },
+    {
+      "code": "G19",
+      "name": "Buah retak-retak (pecah buah)",
+      "category": "Buah"
+    },
+    {
+      "code": "G20",
+      "name": "Busuk pantat buah (blossom end rot)",
+      "category": "Buah"
+    },
+    {
+      "code": "G21",
+      "name": "Daun muda berwarna cokelat dan menggulung",
+      "category": "Daun"
+    },
+    {
+      "code": "G22",
+      "name": "Kuncup bunga dan buah gugur prematur",
+      "category": "Bunga"
+    },
+    {
+      "code": "G23",
+      "name": "Bercak kuning pada daun tua",
+      "category": "Daun"
+    },
+    {
+      "code": "G24",
+      "name": "Daun tua lemah dan mudah terserang penyakit",
+      "category": "Daun"
+    },
+    {
+      "code": "G25",
+      "name": "Jarak antar ruas batang panjang (etiolasi)",
+      "category": "Batang"
+    },
+    {
+      "code": "G28",
+      "name": "Daun lebih gelap dari normal dan tebal",
+      "category": "Daun"
+    },
+    {
+      "code": "G29",
+      "name": "Mati pucuk (die back)",
+      "category": "Batang"
+    },
+    {
+      "code": "G30",
+      "name": "Ruas tanaman memendek (rosetting)",
+      "category": "Batang"
+    }
+  ],
+  "nutrients": [
+    {
+      "code": "D01",
+      "name": "Defisiensi Nitrogen (N)",
+      "solusi": "Berikan pupuk nitrogen (Urea, ZA, KNO3) atau pupuk daun N tinggi."
+    },
+    {
+      "code": "D02",
+      "name": "Defisiensi Fosfor (P)",
+      "solusi": "Berikan pupuk fosfor (TSP, SP-36, atau NPK)."
+    },
+    {
+      "code": "D03",
+      "name": "Defisiensi Kalium (K)",
+      "solusi": "Berikan pupuk kalium (KCl, NPK) atau pupuk daun K tinggi."
+    },
+    {
+      "code": "D04",
+      "name": "Defisiensi Kalsium (Ca)",
+      "solusi": "Berikan kapur dolomit/kalsium karbonat atau pupuk kalsium; perbaiki penyiraman."
+    },
+    {
+      "code": "D05",
+      "name": "Defisiensi Magnesium (Mg)",
+      "solusi": "Berikan pupuk kieserit atau kapur dolomit."
+    },
+    {
+      "code": "D06",
+      "name": "Defisiensi Boron (B)",
+      "solusi": "Berikan pupuk Borax atau pupuk daun mikro lengkap."
+    }
+  ],
+  "rules": [
+    {
+      "nutrient": "D01",
+      "symptom": "G01",
+      "cf": 0.80
+    },
+    {
+      "nutrient": "D01",
+      "symptom": "G02",
+      "cf": 0.70
+    },
+    {
+      "nutrient": "D01",
+      "symptom": "G03",
+      "cf": 0.50
+    },
+    {
+      "nutrient": "D01",
+      "symptom": "G04",
+      "cf": 0.70
+    },
+    {
+      "nutrient": "D01",
+      "symptom": "G05",
+      "cf": 0.50
+    },
+    {
+      "nutrient": "D01",
+      "symptom": "G06",
+      "cf": 0.70
+    },
+    {
+      "nutrient": "D01",
+      "symptom": "G07",
+      "cf": 0.50
+    },
+    {
+      "nutrient": "D02",
+      "symptom": "G08",
+      "cf": 0.85
+    },
+    {
+      "nutrient": "D02",
+      "symptom": "G09",
+      "cf": 0.70
+    },
+    {
+      "nutrient": "D02",
+      "symptom": "G10",
+      "cf": 0.50
+    },
+    {
+      "nutrient": "D02",
+      "symptom": "G11",
+      "cf": 0.75
+    },
+    {
+      "nutrient": "D02",
+      "symptom": "G03",
+      "cf": 0.50
+    },
+    {
+      "nutrient": "D02",
+      "symptom": "G12",
+      "cf": 0.65
+    },
+    {
+      "nutrient": "D03",
+      "symptom": "G13",
+      "cf": 0.70
+    },
+    {
+      "nutrient": "D03",
+      "symptom": "G14",
+      "cf": 0.75
+    },
+    {
+      "nutrient": "D03",
+      "symptom": "G15",
+      "cf": 0.85
+    },
+    {
+      "nutrient": "D03",
+      "symptom": "G16",
+      "cf": 0.65
+    },
+    {
+      "nutrient": "D03",
+      "symptom": "G17",
+      "cf": 0.60
+    },
+    {
+      "nutrient": "D04",
+      "symptom": "G18",
+      "cf": 0.75
+    },
+    {
+      "nutrient": "D04",
+      "symptom": "G19",
+      "cf": 0.85
+    },
+    {
+      "nutrient": "D04",
+      "symptom": "G20",
+      "cf": 0.93
+    },
+    {
+      "nutrient": "D04",
+      "symptom": "G21",
+      "cf": 0.70
+    },
+    {
+      "nutrient": "D04",
+      "symptom": "G22",
+      "cf": 0.60
+    },
+    {
+      "nutrient": "D05",
+      "symptom": "G23",
+      "cf": 0.85
+    },
+    {
+      "nutrient": "D05",
+      "symptom": "G24",
+      "cf": 0.70
+    },
+    {
+      "nutrient": "D05",
+      "symptom": "G25",
+      "cf": 0.60
+    },
+    {
+      "nutrient": "D05",
+      "symptom": "G01",
+      "cf": 0.40
+    },
+    {
+      "nutrient": "D06",
+      "symptom": "G28",
+      "cf": 0.75
+    },
+    {
+      "nutrient": "D06",
+      "symptom": "G29",
+      "cf": 0.85
+    },
+    {
+      "nutrient": "D06",
+      "symptom": "G30",
+      "cf": 0.70
+    },
+    {
+      "nutrient": "D06",
+      "symptom": "G03",
+      "cf": 0.40
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="bg-slate-50 min-h-screen py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="mb-8 flex items-center justify-between">
+            <div>
+                <h2 class="text-3xl font-bold text-slate-900">Hasil Diagnosa</h2>
+                <p class="mt-1 text-slate-600">Laporan lengkap analisis kesehatan tanaman pepaya Anda.</p>
+            </div>
+            <a href="/consult" class="text-emerald-600 hover:text-emerald-700 font-medium flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                    </path>
+                </svg>
+                Diagnosa Ulang
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <!-- Left Column: Main Result -->
+            <div class="lg:col-span-2 space-y-8">
+
+                <!-- Top Diagnosis Card -->
+                <div
+                    class="bg-white rounded-2xl shadow-xl shadow-emerald-100/50 border border-emerald-100 overflow-hidden relative">
+                    <div class="absolute top-0 right-0 p-6 opacity-10">
+                        <svg class="w-32 h-32 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+
+                    <div class="p-8 relative z-10">
+                        <h3 class="text-sm font-bold text-emerald-600 uppercase tracking-wider mb-1">Hasil Utama Sistem
+                            Pakar</h3>
+                        <h1 class="text-3xl font-extrabold text-slate-900 mb-2">{{ top_nutrient.name }}</h1>
+                        <div class="flex items-end gap-3 mb-6">
+                            <span class="text-5xl font-bold text-slate-800">{{ (top_cf * 100)|round(1) }}%</span>
+                            <span class="text-slate-500 font-medium mb-2">Tingkat Keyakinan (CF)</span>
+                        </div>
+
+                        <div class="bg-emerald-50 rounded-xl p-5 border border-emerald-100">
+                            <h4 class="font-semibold text-emerald-800 mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Rekomendasi Penanganan
+                            </h4>
+                            <ul class="space-y-2">
+                                {% if top_nutrient.solusi %}
+                                {% for sol in top_nutrient.solusi.split('; ') %}
+                                <li class="flex items-start text-emerald-700 text-sm">
+                                    <svg class="w-4 h-4 mr-2 mt-0.5 flex-shrink-0 text-emerald-500" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    {{ sol }}
+                                </li>
+                                {% endfor %}
+                                {% else %}
+                                <li class="text-slate-500 text-sm">Belum ada rekomendasi khusus.</li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chart -->
+            <div class="bg-white rounded-2xl shadow-lg border border-slate-100 p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-4">Grafik Tingkat Keyakinan (CF)</h3>
+                <div class="h-64">
+                    <canvas id="cfChart"></canvas>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Column: Details -->
+        <div class="space-y-8">
+
+            <!-- Details Card -->
+            <div class="bg-white rounded-2xl shadow-lg border border-slate-100 p-6">
+                <h3 class="text-sm font-bold text-slate-500 uppercase tracking-wider mb-4">Detail Perhitungan CF
+                </h3>
+                <div class="space-y-4">
+                    {% for nutrient, cf in cf_results.items() %}
+                    <div
+                        class="{{ 'opacity-100' if nutrient == top_nutrient.code else 'opacity-60 hover:opacity-100 transition-opacity' }}">
+                        <div class="flex justify-between items-center mb-1">
+                            <span
+                                class="text-sm font-medium {{ 'text-emerald-700 font-bold' if nutrient == top_nutrient.code else 'text-slate-600' }}">
+                                {{ nutrient_names[nutrient] }}
+                                {% if nutrient == top_nutrient.code %}
+                                <span
+                                    class="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-emerald-100 text-emerald-800">
+                                    Utama
+                                </span>
+                                {% endif %}
+                            </span>
+                            <span
+                                class="text-sm font-bold {{ 'text-emerald-700' if nutrient == top_nutrient.code else 'text-slate-600' }}">{{
+                                (cf * 100)|round(2) }}%</span>
+                        </div>
+                        <div class="w-full bg-slate-100 rounded-full h-2">
+                            <div class="{{ 'bg-emerald-500' if nutrient == top_nutrient.code else 'bg-slate-400' }} h-2 rounded-full transition-all duration-1000"
+                                style="width: calc({{ cf }} * 100%);"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                    <div class="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-100">
+                        <p class="text-xs text-blue-600 flex items-start">
+                            <svg class="w-4 h-4 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Nilai tinggi pada defisiensi lain disebabkan oleh gejala yang saling beririsan. Fokus pada
+                            <strong>Diagnosa Utama</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Info -->
+            <div class="bg-slate-100 rounded-2xl p-6 border border-slate-200">
+                <h3 class="text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">Info Konsultasi</h3>
+                <dl class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <dt class="text-slate-500">Nama:</dt>
+                        <dd class="font-medium text-slate-800">{{ name if name else '-' }}</dd>
+                    </div>
+                    <div class="flex justify-between">
+                        <dt class="text-slate-500">Umur Tanaman:</dt>
+                        <dd class="font-medium text-slate-800">{{ age if age else '-' }}</dd>
+                    </div>
+                    <div class="flex justify-between">
+                        <dt class="text-slate-500">Gejala Dipilih:</dt>
+                        <dd class="font-medium text-slate-800">{{ symptoms_selected|length }} Gejala</dd>
+                    </div>
+                </dl>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Data Storage for Chart -->
+<script id="chart-labels" type="application/json">{{ chart_labels | tojson }}</script>
+<script id="chart-data" type="application/json">{{ chart_data | tojson }}</script>
+
+<script>
+    // Prepare data for Chart.js
+    const nutrients = JSON.parse(document.getElementById('chart-labels').textContent);
+    const cfValues = JSON.parse(document.getElementById('chart-data').textContent);
+
+    const ctx = document.getElementById('cfChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: nutrients.map(n => 'Defisiensi ' + n),
+            datasets: [
+                {
+                    label: 'Tingkat Keyakinan (CF)',
+                    data: cfValues,
+                    backgroundColor: 'rgba(16, 185, 129, 0.7)', // Emerald 500
+                    borderColor: 'rgb(16, 185, 129)',
+                    borderWidth: 2,
+                    borderRadius: 6
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 1.0,
+                    ticks: {
+                        callback: function (value) {
+                            return (value * 100) + '%';
+                        }
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    display: true
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}

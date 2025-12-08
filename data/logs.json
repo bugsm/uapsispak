@@ -1,0 +1,210 @@
+[
+  {
+    "timestamp": "2025-12-01T20:43:54.299413",
+    "name": "Nur Faadil",
+    "age": "2",
+    "symptoms": [
+      "G03"
+    ],
+    "cf_results": {
+      "N": 0.0,
+      "K": 0.0,
+      "P": 0.7
+    },
+    "ml_results": {
+      "N": 0.75,
+      "K": 0.15,
+      "P": 0.1
+    },
+    "top_diagnosis": "Defisiensi Fosfor",
+    "integration": "inconsistent"
+  },
+  {
+    "timestamp": "2025-12-03T19:56:06.416547",
+    "name": null,
+    "age": null,
+    "symptoms": [
+      "G01",
+      "G04",
+      "G08"
+    ],
+    "cf_results": {
+      "N": 0.88,
+      "K": 0.6,
+      "P": 0.6
+    },
+    "top_diagnosis": "Defisiensi Nitrogen"
+  },
+  {
+    "timestamp": "2025-12-03T19:56:39.867623",
+    "name": null,
+    "age": null,
+    "symptoms": [
+      "G01",
+      "G04",
+      "G05"
+    ],
+    "cf_results": {
+      "N": 0.88,
+      "K": 0.7,
+      "P": 0.6
+    },
+    "top_diagnosis": "Defisiensi Nitrogen"
+  },
+  {
+    "timestamp": "2025-12-08T22:17:46.079098",
+    "name": null,
+    "age": null,
+    "symptoms": {
+      "G03": 0.6,
+      "G07": 0.8,
+      "G17": 0.6,
+      "G18": 1.0,
+      "G22": 0.6,
+      "G25": 0.8,
+      "G29": 0.6
+    },
+    "cf_results": {
+      "D01": 0.58,
+      "D02": 0.3,
+      "D03": 0.36,
+      "D04": 0.84,
+      "D05": 0.48,
+      "D06": 0.6276
+    },
+    "top_diagnosis": "Defisiensi Kalsium (Ca)"
+  },
+  {
+    "timestamp": "2025-12-08T22:19:31.625727",
+    "name": null,
+    "age": null,
+    "symptoms": {
+      "G03": 0.6,
+      "G07": 0.8,
+      "G17": 0.6,
+      "G18": 1.0,
+      "G22": 0.6,
+      "G25": 0.8,
+      "G29": 0.6
+    },
+    "cf_results": {
+      "D01": 0.58,
+      "D02": 0.3,
+      "D03": 0.36,
+      "D04": 0.84,
+      "D05": 0.48,
+      "D06": 0.6276
+    },
+    "top_diagnosis": "Defisiensi Kalsium (Ca)"
+  },
+  {
+    "timestamp": "2025-12-08T22:21:51.149590",
+    "name": null,
+    "age": null,
+    "symptoms": {
+      "G03": 0.6,
+      "G07": 0.8,
+      "G17": 0.6,
+      "G18": 1.0,
+      "G22": 0.6,
+      "G25": 0.8,
+      "G29": 0.6
+    },
+    "cf_results": {
+      "D01": 0.58,
+      "D02": 0.3,
+      "D03": 0.36,
+      "D04": 0.84,
+      "D05": 0.48,
+      "D06": 0.6276
+    },
+    "top_diagnosis": "Defisiensi Kalsium (Ca)"
+  },
+  {
+    "timestamp": "2025-12-08T22:26:46.099958",
+    "name": null,
+    "age": null,
+    "symptoms": {
+      "G03": 0.6,
+      "G07": 0.8,
+      "G17": 0.6,
+      "G18": 1.0,
+      "G22": 0.6,
+      "G25": 0.8,
+      "G29": 0.6
+    },
+    "cf_results": {
+      "D01": 0.58,
+      "D02": 0.3,
+      "D03": 0.36,
+      "D04": 0.84,
+      "D05": 0.48,
+      "D06": 0.6276
+    },
+    "top_diagnosis": "Defisiensi Kalsium (Ca)"
+  },
+  {
+    "timestamp": "2025-12-08T22:27:16.943363",
+    "name": null,
+    "age": null,
+    "symptoms": {
+      "G01": 0.6,
+      "G02": 0.8,
+      "G04": 0.2,
+      "G05": 0.6,
+      "G08": 0.8,
+      "G09": 1.0,
+      "G10": 0.6,
+      "G13": 0.2,
+      "G14": 0.8,
+      "G15": 0.6,
+      "G16": 0.2,
+      "G19": 0.8,
+      "G20": 0.6,
+      "G21": 0.2,
+      "G23": 0.8,
+      "G24": 0.6
+    },
+    "cf_results": {
+      "D01": 0.8623,
+      "D02": 0.9328,
+      "D03": 0.8534,
+      "D04": 0.8784,
+      "D05": 0.8589,
+      "D06": 0.0
+    },
+    "top_diagnosis": "Defisiensi Fosfor (P)"
+  },
+  {
+    "timestamp": "2025-12-08T22:29:17.273618",
+    "name": null,
+    "age": null,
+    "symptoms": {
+      "G01": 0.6,
+      "G02": 0.8,
+      "G04": 0.2,
+      "G05": 0.6,
+      "G08": 0.8,
+      "G09": 1.0,
+      "G10": 0.6,
+      "G13": 0.2,
+      "G14": 0.8,
+      "G15": 0.6,
+      "G16": 0.2,
+      "G19": 0.8,
+      "G20": 0.6,
+      "G21": 0.2,
+      "G23": 0.8,
+      "G24": 0.6
+    },
+    "cf_results": {
+      "D01": 0.8623,
+      "D02": 0.9328,
+      "D03": 0.8534,
+      "D04": 0.8784,
+      "D05": 0.8589,
+      "D06": 0.0
+    },
+    "top_diagnosis": "Defisiensi Fosfor (P)"
+  }
+]
