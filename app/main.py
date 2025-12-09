@@ -13,8 +13,8 @@ from fastapi.templating import Jinja2Templates
 from app.routers import web
 
 app = FastAPI(
-    title="Sistem Pakar Pepaya",
-    description="Hybrid Expert System for Papaya Nutrient Deficiency",
+    title="Sistem Pakar Tomat",
+    description="Hybrid Expert System for Tomato Nutrient Deficiency",
     version="1.0.0"
 )
 
