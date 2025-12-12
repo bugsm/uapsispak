@@ -278,3 +278,41 @@ Untuk pertanyaan atau issue, silakan buat issue di repository ini.
 **Dikembangkan untuk Tugas Akhir Mata Kuliah Sistem Pakar 2025**
 
 **Referensi**: Shortliffe, E. H., & Buchanan, B. G. (1975). A model of inexact reasoning in medicine. Mathematical Biosciences, 23(3-4), 351-379.
+
+
+32 gejala, 6 defisensi, 37 rules cf
+
+distribusi gejala per kategori
+Daun: 14 gejala (G01, G02, G04, G08, G09, G10, G13, G14, G15, G21, G23, G24, G26, G30)
+Batang: 7 gejala (G03, G06, G11, G18, G25, G27, G28)
+Buah: 6 gejala (G05, G16, G19, G20, G29, G31)
+Bunga: 3 gejala (G07, G17, G22)
+Akar: 2 gejala (G12, G32)
+
+rules per kategori
+Daun: 15 rules
+D01 (Nitrogen): G01, G02, G04 = 3 rules
+D02 (Fosfor): G08, G09, G10 = 3 rules
+D03 (Kalium): G13, G14, G15 = 3 rules
+D04 (Kalsium): G21 = 1 rule
+D05 (Magnesium): G23, G24, G01, G30 = 4 rules
+D06 (Boron): G26 = 1 rule
+Batang: 6 rules
+D01 (Nitrogen): G03, G06 = 2 rules
+D02 (Fosfor): G11, G03 = 2 rules
+D05 (Magnesium): G25 = 1 rule
+D06 (Boron): G27, G28, G03, G18 = 4 rules
+Buah: 6 rules
+D01 (Nitrogen): G05 = 1 rule
+D03 (Kalium): G16, G29, G31 = 3 rules
+D04 (Kalsium): G19, G20 = 2 rules
+Bunga: 4 rules
+D01 (Nitrogen): G07 = 1 rule
+D03 (Kalium): G17 = 1 rule
+D04 (Kalsium): G22 = 1 rule
+D06 (Boron): G22 = 1 rule
+Akar: 2 rules
+D02 (Fosfor): G12, G32 = 2 rules
+
+
+
