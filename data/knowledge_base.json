@@ -2,12 +2,12 @@
   "symptoms": [
     {
       "code": "G01",
-      "name": "Daun bagian bawah berwarna kuning (klorosis)",
+      "name": "Daun bagian bawah menguning (klorosis) dimulai dari ujung",
       "category": "Daun"
     },
     {
       "code": "G02",
-      "name": "Daun tua mengering dan gugur",
+      "name": "Daun tua menguning dan gugur prematur",
       "category": "Daun"
     },
     {
@@ -17,187 +17,207 @@
     },
     {
       "code": "G04",
-      "name": "Tulang daun muda tampak pucat",
+      "name": "Daun muda berwarna hijau pucat atau kuning",
       "category": "Daun"
     },
     {
       "code": "G05",
-      "name": "Buah tumbuh kecil dan cepat masak",
+      "name": "Buah tomat kecil dan matang terlalu cepat",
       "category": "Buah"
     },
     {
       "code": "G06",
-      "name": "Tanaman tampak lemah dan kurus",
+      "name": "Tanaman tampak lemah, kurus, dan tidak vigor",
       "category": "Batang"
     },
     {
       "code": "G07",
-      "name": "Produksi bunga rendah",
+      "name": "Produksi bunga sedikit dan mudah rontok",
       "category": "Bunga"
     },
     {
       "code": "G08",
-      "name": "Daun bagian bawah berwarna merah keunguan",
+      "name": "Daun bagian bawah berwarna ungu kemerahan",
       "category": "Daun"
     },
     {
       "code": "G09",
-      "name": "Tepi daun berwarna coklat seperti hangus",
+      "name": "Tepi daun mengering dan berwarna coklat seperti terbakar",
       "category": "Daun"
     },
     {
       "code": "G10",
-      "name": "Daun terpelintir",
+      "name": "Daun menggulung ke atas atau ke bawah",
       "category": "Daun"
     },
     {
       "code": "G11",
-      "name": "Batang dan cabang berwarna ungu",
+      "name": "Batang dan tangkai daun berwarna ungu kehitaman",
       "category": "Batang"
     },
     {
       "code": "G12",
-      "name": "Sistem perakaran terhambat",
+      "name": "Sistem perakaran terhambat dan pendek",
       "category": "Akar"
     },
     {
       "code": "G13",
-      "name": "Daun tua mengerut tidak merata",
+      "name": "Daun tua mengerut dan tidak merata",
       "category": "Daun"
     },
     {
       "code": "G14",
-      "name": "Tepi dan ujung daun menguning lalu bercak coklat",
+      "name": "Tepi dan ujung daun menguning kemudian muncul bercak coklat nekrotik",
       "category": "Daun"
     },
     {
       "code": "G15",
-      "name": "Daun seperti terbakar dan gugur",
+      "name": "Daun seperti terbakar di tepi dan gugur",
       "category": "Daun"
     },
     {
       "code": "G16",
-      "name": "Buah tidak sempurna dan tidak tahan simpan",
+      "name": "Buah tomat tidak sempurna, bentuk tidak merata, dan tidak tahan simpan",
       "category": "Buah"
     },
     {
       "code": "G17",
-      "name": "Bunga mudah rontok",
+      "name": "Bunga mudah rontok sebelum menjadi buah",
       "category": "Bunga"
     },
     {
       "code": "G18",
-      "name": "Titik tumbuh pada pucuk mati",
+      "name": "Titik tumbuh pada pucuk mati (die back)",
       "category": "Batang"
     },
     {
       "code": "G19",
-      "name": "Buah retak-retak (pecah buah)",
+      "name": "Buah tomat retak-retak (cracking) terutama di bagian ujung",
       "category": "Buah"
     },
     {
       "code": "G20",
-      "name": "Busuk pantat buah (blossom end rot)",
+      "name": "Busuk ujung buah (blossom end rot) - bercak hitam/coklat di ujung buah",
       "category": "Buah"
     },
     {
       "code": "G21",
-      "name": "Daun muda berwarna cokelat dan menggulung",
+      "name": "Daun muda berwarna cokelat dan menggulung ke dalam",
       "category": "Daun"
     },
     {
       "code": "G22",
-      "name": "Kuncup bunga dan buah gugur prematur",
+      "name": "Kuncup bunga dan buah muda gugur prematur",
       "category": "Bunga"
     },
     {
       "code": "G23",
-      "name": "Bercak kuning pada daun tua",
+      "name": "Bercak kuning interveinal pada daun tua (antara tulang daun)",
       "category": "Daun"
     },
     {
       "code": "G24",
-      "name": "Daun tua lemah dan mudah terserang penyakit",
+      "name": "Daun tua lemah, tipis, dan mudah terserang penyakit",
       "category": "Daun"
     },
     {
       "code": "G25",
-      "name": "Jarak antar ruas batang panjang (etiolasi)",
+      "name": "Jarak antar ruas batang memanjang (etiolasi)",
       "category": "Batang"
     },
     {
-      "code": "G28",
+      "code": "G26",
       "name": "Daun lebih gelap dari normal dan tebal",
       "category": "Daun"
     },
     {
-      "code": "G29",
-      "name": "Mati pucuk (die back)",
+      "code": "G27",
+      "name": "Mati pucuk dan pertumbuhan lateral terhambat",
       "category": "Batang"
     },
     {
-      "code": "G30",
-      "name": "Ruas tanaman memendek (rosetting)",
+      "code": "G28",
+      "name": "Ruas tanaman memendek (rosetting) dan daun mengumpul",
       "category": "Batang"
+    },
+    {
+      "code": "G29",
+      "name": "Buah tomat berwarna tidak merata saat matang",
+      "category": "Buah"
+    },
+    {
+      "code": "G30",
+      "name": "Daun menguning di antara tulang daun sementara tulang daun tetap hijau",
+      "category": "Daun"
+    },
+    {
+      "code": "G31",
+      "name": "Buah tomat lunak dan mudah busuk",
+      "category": "Buah"
+    },
+    {
+      "code": "G32",
+      "name": "Pertumbuhan akar lateral terhambat",
+      "category": "Akar"
     }
   ],
   "nutrients": [
     {
       "code": "D01",
       "name": "Defisiensi Nitrogen (N)",
-      "solusi": "Berikan pupuk nitrogen (Urea, ZA, KNO3) atau pupuk daun N tinggi."
+      "solusi": "Berikan pupuk nitrogen seperti Urea (46% N), ZA (21% N), atau KNO3; Aplikasi pupuk daun dengan kandungan N tinggi; Dosis: 100-150 kg/ha Urea atau 2-3 g/liter untuk pupuk daun; Berikan secara bertahap setiap 2 minggu sekali"
     },
     {
       "code": "D02",
       "name": "Defisiensi Fosfor (P)",
-      "solusi": "Berikan pupuk fosfor (TSP, SP-36, atau NPK)."
+      "solusi": "Berikan pupuk fosfor seperti TSP (46% P2O5), SP-36 (36% P2O5), atau NPK dengan kandungan P tinggi; Aplikasi pupuk dasar sebelum tanam; Dosis: 50-100 kg/ha SP-36; Bisa juga aplikasi pupuk daun P dengan dosis 1-2 g/liter"
     },
     {
       "code": "D03",
       "name": "Defisiensi Kalium (K)",
-      "solusi": "Berikan pupuk kalium (KCl, NPK) atau pupuk daun K tinggi."
+      "solusi": "Berikan pupuk kalium seperti KCl (60% K2O), K2SO4 (50% K2O), atau NPK dengan kandungan K tinggi; Dosis: 100-150 kg/ha KCl; Aplikasi pupuk daun K dengan dosis 2-3 g/liter setiap 2 minggu; Penting saat fase pembungaan dan pembuahan"
     },
     {
       "code": "D04",
       "name": "Defisiensi Kalsium (Ca)",
-      "solusi": "Berikan kapur dolomit/kalsium karbonat atau pupuk kalsium; perbaiki penyiraman."
+      "solusi": "Berikan kapur dolomit (CaCO3 + MgCO3) atau kalsium nitrat; Dosis: 1-2 ton/ha kapur dolomit untuk tanah asam, atau 2-3 g/liter kalsium nitrat untuk pupuk daun; Perbaiki penyiraman yang konsisten untuk mencegah blossom end rot; Hindari fluktuasi kelembaban tanah yang ekstrem"
     },
     {
       "code": "D05",
       "name": "Defisiensi Magnesium (Mg)",
-      "solusi": "Berikan pupuk kieserit atau kapur dolomit."
+      "solusi": "Berikan pupuk kieserit (MgSO4) atau kapur dolomit yang mengandung magnesium; Dosis: 50-100 kg/ha kieserit atau 1-2 g/liter untuk aplikasi daun; Bisa juga gunakan Epsom salt (MgSO4.7H2O) dengan dosis 1-2 g/liter sebagai pupuk daun"
     },
     {
       "code": "D06",
       "name": "Defisiensi Boron (B)",
-      "solusi": "Berikan pupuk Borax atau pupuk daun mikro lengkap."
+      "solusi": "Berikan pupuk Borax (Na2B4O7.10H2O) atau asam borat; Dosis: 1-2 kg/ha Borax untuk aplikasi tanah atau 0.5-1 g/liter untuk pupuk daun; Aplikasi setiap 3-4 minggu sekali; Hati-hati dengan dosis karena boron mudah berlebihan dan menjadi racun"
     }
   ],
   "rules": [
     {
       "nutrient": "D01",
       "symptom": "G01",
-      "cf": 0.80
+      "cf": 0.85
     },
     {
       "nutrient": "D01",
       "symptom": "G02",
-      "cf": 0.70
+      "cf": 0.80
     },
     {
       "nutrient": "D01",
       "symptom": "G03",
-      "cf": 0.50
+      "cf": 0.60
     },
     {
       "nutrient": "D01",
       "symptom": "G04",
-      "cf": 0.70
+      "cf": 0.75
     },
     {
       "nutrient": "D01",
       "symptom": "G05",
-      "cf": 0.50
+      "cf": 0.55
     },
     {
       "nutrient": "D01",
@@ -212,12 +232,12 @@
     {
       "nutrient": "D02",
       "symptom": "G08",
-      "cf": 0.85
+      "cf": 0.90
     },
     {
       "nutrient": "D02",
       "symptom": "G09",
-      "cf": 0.70
+      "cf": 0.65
     },
     {
       "nutrient": "D02",
@@ -227,27 +247,32 @@
     {
       "nutrient": "D02",
       "symptom": "G11",
-      "cf": 0.75
+      "cf": 0.80
     },
     {
       "nutrient": "D02",
       "symptom": "G03",
-      "cf": 0.50
+      "cf": 0.55
     },
     {
       "nutrient": "D02",
       "symptom": "G12",
-      "cf": 0.65
+      "cf": 0.70
+    },
+    {
+      "nutrient": "D02",
+      "symptom": "G32",
+      "cf": 0.75
     },
     {
       "nutrient": "D03",
       "symptom": "G13",
-      "cf": 0.70
+      "cf": 0.75
     },
     {
       "nutrient": "D03",
       "symptom": "G14",
-      "cf": 0.75
+      "cf": 0.80
     },
     {
       "nutrient": "D03",
@@ -257,27 +282,37 @@
     {
       "nutrient": "D03",
       "symptom": "G16",
-      "cf": 0.65
+      "cf": 0.70
     },
     {
       "nutrient": "D03",
       "symptom": "G17",
+      "cf": 0.65
+    },
+    {
+      "nutrient": "D03",
+      "symptom": "G29",
       "cf": 0.60
+    },
+    {
+      "nutrient": "D03",
+      "symptom": "G31",
+      "cf": 0.65
     },
     {
       "nutrient": "D04",
       "symptom": "G18",
-      "cf": 0.75
+      "cf": 0.80
     },
     {
       "nutrient": "D04",
       "symptom": "G19",
-      "cf": 0.85
+      "cf": 0.75
     },
     {
       "nutrient": "D04",
       "symptom": "G20",
-      "cf": 0.93
+      "cf": 0.95
     },
     {
       "nutrient": "D04",
@@ -292,22 +327,37 @@
     {
       "nutrient": "D05",
       "symptom": "G23",
-      "cf": 0.85
+      "cf": 0.90
     },
     {
       "nutrient": "D05",
       "symptom": "G24",
-      "cf": 0.70
+      "cf": 0.75
     },
     {
       "nutrient": "D05",
       "symptom": "G25",
-      "cf": 0.60
+      "cf": 0.55
     },
     {
       "nutrient": "D05",
       "symptom": "G01",
-      "cf": 0.40
+      "cf": 0.45
+    },
+    {
+      "nutrient": "D05",
+      "symptom": "G30",
+      "cf": 0.85
+    },
+    {
+      "nutrient": "D06",
+      "symptom": "G26",
+      "cf": 0.80
+    },
+    {
+      "nutrient": "D06",
+      "symptom": "G27",
+      "cf": 0.90
     },
     {
       "nutrient": "D06",
@@ -316,18 +366,18 @@
     },
     {
       "nutrient": "D06",
-      "symptom": "G29",
-      "cf": 0.85
+      "symptom": "G03",
+      "cf": 0.50
     },
     {
       "nutrient": "D06",
-      "symptom": "G30",
+      "symptom": "G18",
       "cf": 0.70
     },
     {
       "nutrient": "D06",
-      "symptom": "G03",
-      "cf": 0.40
+      "symptom": "G22",
+      "cf": 0.65
     }
   ]
 }

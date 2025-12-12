@@ -1,85 +1,50 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="relative overflow-hidden">
-    <!-- Background Elements -->
-    <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
-        <div
-            class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-emerald-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob">
-        </div>
-        <div
-            class="absolute top-40 -left-20 w-72 h-72 rounded-full bg-teal-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000">
-        </div>
-        <div
-            class="absolute -bottom-40 left-20 w-80 h-80 rounded-full bg-lime-100 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000">
-        </div>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24">
-        <div class="text-center max-w-3xl mx-auto">
-            <div
-                class="inline-flex items-center px-4 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold mb-6 border border-emerald-100">
-                <span class="flex h-2 w-2 rounded-full bg-emerald-500 mr-2"></span>
-                Sistem Pakar Cerdas Berbasis Web
-            </div>
-
-            <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">
-                Diagnosa Kesehatan <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">Tanaman
-                    Pepaya</span> Anda
+<div class="bg-gradient-to-b from-gray-50 to-white min-h-screen py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Diagnosa Defisiensi Unsur Hara<br>
+                <span class="text-primary">Tanaman Tomat</span>
             </h1>
-
-            <p class="text-xl text-slate-600 mb-10 leading-relaxed">
-                Deteksi dini defisiensi unsur hara pada tanaman pepaya menggunakan metode
-                <span class="font-semibold text-slate-800">Certainty Factor</span>.
-                Akurat, cepat, dan mudah digunakan.
+            <p class="text-lg text-gray-600 mb-8">
+                Deteksi dini kekurangan nutrisi pada tanaman tomat dengan metode Certainty Factor
             </p>
-
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="/consult"
-                    class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-lg font-medium rounded-xl text-white bg-primary hover:bg-secondary shadow-lg shadow-emerald-200 hover:shadow-emerald-300 transition-all transform hover:-translate-y-1">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
-                        </path>
-                    </svg>
+                    class="inline-flex justify-center items-center px-6 py-3 bg-primary hover:bg-secondary text-white rounded-lg font-medium transition-colors">
                     Mulai Konsultasi
                 </a>
                 <a href="/about"
-                    class="inline-flex justify-center items-center px-8 py-4 border border-slate-200 text-lg font-medium rounded-xl text-slate-700 bg-white hover:bg-slate-50 hover:border-slate-300 transition-all">
-                    Pelajari Lebih Lanjut
+                    class="inline-flex justify-center items-center px-6 py-3 border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 rounded-lg font-medium transition-colors">
+                    Tentang Sistem
                 </a>
             </div>
         </div>
 
-        <!-- Features Grid -->
-        <div class="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div
-                class="bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-emerald-100/50 transition-all duration-300">
-                <div
-                    class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 text-emerald-600">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <!-- Features -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-slate-800 mb-3">Metode Certainty Factor</h3>
-                <p class="text-slate-600">Menggunakan algoritma sistem pakar untuk menghitung tingkat kepastian diagnosa
-                    berdasarkan gejala yang Anda pilih. Setiap gejala memiliki bobot kepercayaan yang dikombinasikan untuk menghasilkan diagnosa yang akurat.</p>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Metode Certainty Factor</h3>
+                <p class="text-gray-600 text-sm">Perhitungan tingkat kepastian diagnosa berdasarkan gejala yang dipilih</p>
             </div>
 
-            <div
-                class="bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-emerald-100/50 transition-all duration-300">
-                <div class="w-14 h-14 bg-lime-100 rounded-2xl flex items-center justify-center mb-6 text-lime-600">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                        </path>
+                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-slate-800 mb-3">Rekomendasi Solusi</h3>
-                <p class="text-slate-600">Dapatkan saran penanganan yang tepat dan rekomendasi pemupukan sesuai dengan
-                    jenis defisiensi yang terdeteksi. Setiap diagnosa dilengkapi dengan langkah-langkah penanganan yang praktis.</p>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Rekomendasi Solusi</h3>
+                <p class="text-gray-600 text-sm">Saran penanganan dan pemupukan sesuai jenis defisiensi</p>
             </div>
         </div>
     </div>
