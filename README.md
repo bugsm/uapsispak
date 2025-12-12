@@ -279,7 +279,6 @@ Untuk pertanyaan atau issue, silakan buat issue di repository ini.
 
 **Referensi**: Shortliffe, E. H., & Buchanan, B. G. (1975). A model of inexact reasoning in medicine. Mathematical Biosciences, 23(3-4), 351-379.
 
-
 32 gejala, 6 defisensi, 37 rules cf
 
 distribusi gejala per kategori
@@ -313,6 +312,7 @@ D04 (Kalsium): G22 = 1 rule
 D06 (Boron): G22 = 1 rule
 Akar: 2 rules
 D02 (Fosfor): G12, G32 = 2 rules
+
 
 
 
